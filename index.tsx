@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-console.log("VITE_API_KEY=", import.meta.env.VITE_API_KEY);
-console.log("MODE=", import.meta.env.MODE);
-console.log("PROD=", import.meta.env.PROD);
+//console.log("VITE_API_KEY=", import.meta.env.VITE_API_KEY);
+//console.log("MODE=", import.meta.env.MODE);
+//console.log("PROD=", import.meta.env.PROD);
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
