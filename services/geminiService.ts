@@ -13,7 +13,10 @@ export const analyzeChatContent = async (
   isImage: boolean = false,
   modelName: string = 'gemini-3-flash-preview'
 ): Promise<AnalysisResult> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
+  //const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_API_KEY,});
   
   const systemInstruction = `你是一个具备深度社交洞察力的微信超级助手。
 你的核心任务是：自动分析聊天视窗，实时识别对方的情绪，并从以下五个人格中【自动切换】最合适的一个进行回复：
