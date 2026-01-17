@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { ToneType, AnalysisResult } from "../types";
 
 const MAX_RETRIES = 3;
-const INITIAL_BACKOFF = 2000;
+const INITIAL_BACKOFF = 1000;
 
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
