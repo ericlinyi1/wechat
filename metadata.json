@@ -1,0 +1,7 @@
+{
+  "name": "WeChat Assistant Pro",
+  "description": "An AI-powered tool to analyze chat logs and screenshots, providing context-aware reply suggestions and social intelligence insights.",
+  "requestFramePermissions": [
+    "display-capture"
+  ]
+}
